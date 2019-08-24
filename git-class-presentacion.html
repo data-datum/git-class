@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Tutorial de Git/GitHub</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Roxana Noelia Villafañe" />
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Tutorial de Git/GitHub
+## ⚔<br/>with xaringan
+### Roxana Noelia Villafañe
+### UNNE / IQUIBA-NEA(LEMyP)
+### 2016/12/12 (updated: 2019-08-24)
+
+---
+
+class: center, middle
+# ¿Qué es Git?
+
+&lt;img src="git-logo-2.jpg" width="50%" align="center" /&gt;
+---
+&lt;img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" /&gt;
+
+# Git
+
+- Git es un sistema de control de versiones creado por *Linus Torvalds*.
+- Un sistema de control de versiones es una porción de software diseñada para tener seguimiento
+de los cambios a lo largo del tiempo. 
+- Git es un sistema de control de versiones *distribuido*, que significa que cada uno que trabaja con Git tiene una copia de la historia completa del proyecto. 
+
+### Ventajas de usar Git
+- La habilidad para deshacer cambios.
+- Una historia completa de todos los cambios.
+- Documentación de por que los cambios fueron hechos. 
+- La tranquilidad de cambiar cualquier cosa. 
+- Muchas lineas históricas. 
+#### Si trabajamos en equipo
+- La habilidad para resolver conflictos. 
+- Creación de ramas para trabajar de manera independiente. 
+
+
+---
+&lt;img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" /&gt;
+
+# GitHub
+
+- GitHub es un sitio web donde puedes subir una copia de tu repositorio de GitHub. Te permite colaborar más facilmente con otras personas en el proyecto. Lo hace proveyendo una ubicación centralizada para compartir el repositorio, una interfaz basada en la web, y caraceterísticas especiales como _fork, pull requests, issues, y wikis_.
+
+### Ventajas de GitHub
+- Colaborar en diferentes ramas de trabajo. 
+- Re-ver el trabajo en progreso. 
+- Ver el progreso del equipo. 
+
+---
+&lt;img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" /&gt;
+
+# Conceptos Clave
+- __Commit__: cada vez que se guarda un cambio en cualquier archivo, se crea un commit. Cada vez
+que se realiza un commit se agrega un mensaje describiendo el cambio realizado. 
+- __Branch(rama)__: una serie de commits que se crean para agregar una nueva funcionalidad. 
+- Master branch (rama master): cuando creamos un repositorio, es la rama creada por defecto. Es la rama en donde terminarán todos los cambios realizados cuando pasen a producción (etapa final).
+- __Topic master(rama propia)__: cuando estamos creando nuevas funcionalidades en una rama, las hacemos en una rama que hemos creado. Luego esos cambios serán o no aceptados para ser parte de la rama master. 
+- __Merge__: es una manera de tomar los cambios realizados de una rama e incorporarlos a otra. 
+- __Pull request__: se realiza para que alguien más vea los cambios realizados en una rama propia e incluirla en la rama master. 
+- __Clone (clonar)__: cuando copiamos un repositorio de internet en nuestra computadora para realizar cambios allí. 
+- __Fork__: cuando se crea una copia de un repositorio ajeno en nuestro perfil de GitHub. 
+
+---
+&lt;img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" /&gt;
+
+# Vamos a instalar Git 
+
+https://rogerdudler.github.io/git-guide/index.es.html
+
+
+---
+
+&lt;img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" /&gt;
+
+# Configurar Git
+
+
+1. git config --global user.name "Roxana"
+2. git config --global user.email noelia0618@gmail.com
+
+
+
+---
+
+# Bibliografía
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
