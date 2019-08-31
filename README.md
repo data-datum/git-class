@@ -2,7 +2,7 @@
 ## Git Installation
 http://bit.ly/2PwRhZi
 
-## Resources for learning Git / Github
+## Resources for learning Git
 
 * Git for Humans http://bit.ly/2PwPjbr
 * Git Cheat Sheet - a Collection of the Most Useful Commands http://bit.ly/2PzyGMf
