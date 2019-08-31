@@ -1,9 +1,9 @@
 ---
 title: "Tutorial de Git/GitHub"
-subtitle: "⚔<br/>with xaringan"
+subtitle: "⚔<br/n"
 author: "Roxana Noelia Villafañe"
-institute: "UNNE / IQUIBA-NEA(LEMyP)"
-date: "2016/12/12 (updated: `r Sys.Date()`)"
+institute: ""
+date: "`r Sys.Date()`"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -77,9 +77,120 @@ https://rogerdudler.github.io/git-guide/index.es.html
 
 # Configurar Git
 
+- Configurar Git en nuestra computadora (entorno local)
 
-1. git config --global user.name "Roxana"
-2. git config --global user.email noelia0618@gmail.com
+```{r message=FALSE, warning=FALSE, eval=FALSE}
+1. git config --global user.name "Roxana" #<<
+2. git config --global user.email noelia0618@gmail.com #<<
+```
+
+
+---
+<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+
+# Cómo proceder con Git
+### Si tenemos un repositorio en Github
+- Con este comando se clona la carpeta de Github en nuestra computadora. 
+
+```{r message=FALSE, warning=FALSE, eval=FALSE}
+git clone [url] #<<
+```
+
+
+---
+<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+
+# Cómo proceder con Git
+### Si nuestro repositorio está en una carpeta local y queremos subirlo a Github
+
+```{r message=FALSE, warning=FALSE, eval=FALSE}
+1. git remote add origin https://github.com/usuario/nombre_repositorio.git #<<
+2. git push -u origin master #<<
+```
+
+---
+<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+
+# Cómo crear una rama 
+
+```{r message=FALSE, warning=FALSE, eval=FALSE}
+git branch new_name #<<
+```
+
+- Con este comando listamos las ramas creadas en ese repositorio
+```{r message=FALSE, warning=FALSE, eval=FALSE}
+git branch #<<
+```
+
+- Borrar la rama creada
+```{r message=FALSE, warning=FALSE, eval=FALSE}
+git branch -d new_name #<<
+```
+
+- Crear una rama e ir a esa rama inmediatamente
+```{r message=FALSE, warning=FALSE, eval=FALSE}
+git checkout -b new_name #<<
+```
+
+
+---
+<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+
+# Como realizar cambios en Git/Github
+- Los cambios se hacen por etapas
+
+<img src="file:///C:/Users/Roxana/git-class/images/git-01.jpg" width="100%" align="center" />
+
+---
+
+<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+
+# Como realizar cambios en Git/Github
+
+<img src="file:///C:/Users/Roxana/git-class/images/git-workflow.png" width="80%" align="center" />
+---
+<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+
+# Como guardar cambios (1)
+
+* En primer lugar se realizan los cambios en un archivo. 
+* En la consola de git vamos a la carpeta de trabajo/rama de trabajo
+```{r message=FALSE, warning=FALSE, eval=FALSE}
+cd carpeta_trabajo
+git status #<<
+```
+_git status_ nos permite conocer los cambios realizados.
+
+* Esos cambios se registran mediante el comando
+```{r message=FALSE, warning=FALSE, eval=FALSE}
+git add file.ext #<<
+```
+Se agrega el archivo con la extensión.
+
+---
+
+<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+
+# Como guardar cambios (2)
+
+* Se realiza un commit 
+```{r message=FALSE, warning=FALSE, eval=FALSE}
+git commit -m "nuevo cambio" #<<
+```
+Se agrega un mensaje entre comillas describiendo los cambios realizados
+
+### Ya en este punto terminan los cambios locales
+
+---
+
+<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+
+# Como guardar cambios (3)
+### Los cambios ahora se guardan en un repositorio remoto
+
+```{r message=FALSE, warning=FALSE, eval=FALSE}
+git push origin master #<<
+```
 
 
 
@@ -87,4 +198,10 @@ https://rogerdudler.github.io/git-guide/index.es.html
 
 # Bibliografía 
 
+
+---
+
+```{r message=FALSE, warning=FALSE}
+devtools::session_info()
+```
 
