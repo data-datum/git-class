@@ -15,7 +15,8 @@ output:
 class: center, middle
 # ¿Qué es Git?
 
-<img src="git-logo-2.jpg" width="50%" align="center" />
+<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="30%" align="center" />
+
 ---
 <img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
 
@@ -132,6 +133,11 @@ git branch -d new_name #<<
 git checkout -b new_name #<<
 ```
 
+- Una rama no está disponible _para los demás_ a menos que la subas al repositorio remoto. 
+```{r message=FALSE, warning=FALSE, eval=FALSE}
+git push origin <branch> #<<
+```
+
 
 ---
 <img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
@@ -191,12 +197,115 @@ Se agrega un mensaje entre comillas describiendo los cambios realizados
 ```{r message=FALSE, warning=FALSE, eval=FALSE}
 git push origin master #<<
 ```
+Con este comando se suben los cambios realizados en un repositorio local a un repositorio remoto. 
+_Pushing_ es como se transfieren commits desde el repositorio local a un repositorio remoto. 
+
+---
+<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+
+# Git Push / Git Pull
+
+
+---
+
+<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+
+# Git Diff
+- Nos ayuda a ver las diferencias en los archivos que todavía no han sido agregados a la etapa "stage". 
+
+```{r message=FALSE, warning=FALSE, eval=FALSE}
+git diff #<<
+```
 
 
 
 ---
 
+<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+
+# Fork
+Fork es para copiar un repositorio remoto ajeno a nuestra lista de repositorios remotos. 
+Se realiza desde Github siempre, ya que se están trabajando con repositorios remotos. 
+
+---
+
+<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+
+# Borrar un archivo
+
+```{r message=FALSE, warning=FALSE, eval=FALSE}
+git rm archivo.ext #<<
+```
+
+---
+
+<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+
+# Para ver los commits realizados 
+
+```{r message=FALSE, warning=FALSE, eval=FALSE}
+git log #<<
+```
+
+---
+<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+
+# Git Tips
+
+__1. Hacer commits a menudo__
+Esto permite ahorrar conflictos con las demás personas que trabajan en el proyecto. 
+
+__2. Testear, luego hacer el commit__
+Nunca hacer commit de trabajo incompleto. Siempre testear los cambios antes de compartirlos con los demás. 
+
+__3. Poner mensajes en el commit__
+Escribir mensajes permite que los demás sepan los cambios q se han realizado. Se recomienda ser lo más descriptivo posible.
+
+__4. Crear ramas__
+Crear ramas permite crear líneas de desarrollo, para probar cambios y experimentar ahí. 
+
+__5. Adoptar un flujo de trabajo común en Git__
+Hay muchas formas de crear un apropiado flujo de trabajo. Debemos asegurarnos que todos los miembros del equipo sigan el mismo flujo de trabajo desde el principio. 
+
+
+
+---
+<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+
+# Ayuda
+```{r message=FALSE, warning=FALSE, eval=FALSE}
+git help #<<
+```
+
+
+<img src="file:///C:/Users/Roxana/git-class/images/git-help.png" width="65%" align="center" />
+
+---
+
+<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+
+# Ayuda de un comando específico
+
+```{r message=FALSE, warning=FALSE, eval=FALSE}
+git help clone #<<
+```
+
+Nos abre un archivo html en el navegador de la ayuda de Git. 
+
+---
+<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+
 # Bibliografía 
+
+### git la guía sencilla [español]
+https://rogerdudler.github.io/git-guide/index.es.html
+
+### git comandos más útiles [inglés]
+https://www.keycdn.com/blog/git-cheat-sheet
+
+### Comandos básicos [inglés]
+https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
+
 
 
 ---
