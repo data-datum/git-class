@@ -4,7 +4,7 @@
     <title>Tutorial de Git/GitHub</title>
     <meta charset="utf-8" />
     <meta name="author" content="Roxana Noelia Villafañe" />
-    <meta name="date" content="2019-08-31" />
+    <meta name="date" content="2019-12-15" />
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
   </head>
@@ -13,9 +13,8 @@
 class: center, middle, inverse, title-slide
 
 # Tutorial de Git/GitHub
-## ⚔&lt;br/n
 ### Roxana Noelia Villafañe
-### 2019-08-31
+### 2019-12-15
 
 ---
 
@@ -52,6 +51,7 @@ de los cambios a lo largo del tiempo.
 
 - GitHub es un sitio web donde puedes subir una copia de tu repositorio de GitHub. Te permite colaborar más facilmente con otras personas en el proyecto. Lo hace proveyendo una ubicación centralizada para compartir el repositorio, una interfaz basada en la web, y caraceterísticas especiales como _fork, pull requests, issues, y wikis_.
 
+--
 ### Ventajas de GitHub
 - Colaborar en diferentes ramas de trabajo. 
 - Re-ver el trabajo en progreso. 
@@ -64,7 +64,7 @@ de los cambios a lo largo del tiempo.
 - __Commit__: cada vez que se guarda un cambio en cualquier archivo, se crea un commit. Cada vez
 que se realiza un commit se agrega un mensaje describiendo el cambio realizado. 
 - __Branch(rama)__: una serie de commits que se crean para agregar una nueva funcionalidad. 
-- Master branch (rama master): cuando creamos un repositorio, es la rama creada por defecto. Es la rama en donde terminarán todos los cambios realizados cuando pasen a producción (etapa final).
+- __Master branch (rama master)__: cuando creamos un repositorio, es la rama creada por defecto. Es la rama en donde terminarán todos los cambios realizados cuando pasen a producción (etapa final).
 - __Topic master(rama propia)__: cuando estamos creando nuevas funcionalidades en una rama, las hacemos en una rama que hemos creado. Luego esos cambios serán o no aceptados para ser parte de la rama master. 
 - __Merge__: es una manera de tomar los cambios realizados de una rama e incorporarlos a otra. 
 - __Pull request__: se realiza para que alguien más vea los cambios realizados en una rama propia e incluirla en la rama master. 
@@ -222,7 +222,11 @@ _Pushing_ es como se transfieren commits desde el repositorio local a un reposit
 ---
 &lt;img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" /&gt;
 
-# Git Push / Git Pull
+# Como trabajar con repositorios remotos
+
+
+
+
 
 
 ---
@@ -319,6 +323,35 @@ Nos abre un archivo html en el navegador de la ayuda de Git.
 ---
 &lt;img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" /&gt;
 
+# Qué nos permite hacer git
+
+### - Saber la historia de un proyecto
+
+### - Volver en el tiempo para ver cambios
+
+### - Experimentar con los cambios
+
+### - Hacer un backup de nuestro trabajo
+
+### - Colaborar con otros proyectos
+
+---
+&lt;img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" /&gt;
+
+# Conceptos de Git que hemos visto
+
+### **Repositorio**: la carpeta de tu proyecto.
+### **Commit**: una captura del repositorio
+### **Hash**: un id para un commit
+### **Branch(rama)**
+### **Merge(unión)**: nos permite unir un cambio a la rama master
+### **Remote(remoto)**: una computadora con un repositorio
+### **Clone(clonar)**: obtener un repositorio remoto por primera vez. 
+### **Push**: mandar cambios (commits) a un repositorio remoto desde local.
+- **Pull**: bajar los cambios (commits) de un repositorio remoto a local. 
+---
+&lt;img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" /&gt;
+
 # Bibliografía 
 
 ### git la guía sencilla [español]
@@ -330,7 +363,8 @@ https://www.keycdn.com/blog/git-cheat-sheet
 ### Comandos básicos [inglés]
 https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
 
-
+### Mas links (README de este repo)
+https://github.com/data-datum/git-class 
 
 ---
 
@@ -340,7 +374,7 @@ devtools::session_info()
 ```
 
 ```
-## - Session info ----------------------------------------------------------
+## - Session info ---------------------------------------------------------------
 ##  setting  value                       
 ##  version  R version 3.6.1 (2019-07-05)
 ##  os       Windows 10 x64              
@@ -350,23 +384,26 @@ devtools::session_info()
 ##  collate  Spanish_Argentina.1252      
 ##  ctype    Spanish_Argentina.1252      
 ##  tz       America/Buenos_Aires        
-##  date     2019-08-31                  
+##  date     2019-12-15                  
 ## 
-## - Packages --------------------------------------------------------------
+## - Packages -------------------------------------------------------------------
 ##  package     * version date       lib source        
 ##  assertthat    0.2.1   2019-03-21 [1] CRAN (R 3.6.1)
-##  backports     1.1.4   2019-04-10 [1] CRAN (R 3.6.0)
+##  backports     1.1.5   2019-10-02 [1] CRAN (R 3.6.1)
 ##  callr         3.3.1   2019-07-18 [1] CRAN (R 3.6.1)
 ##  cli           1.1.0   2019-03-19 [1] CRAN (R 3.6.1)
 ##  crayon        1.3.4   2017-09-16 [1] CRAN (R 3.6.1)
 ##  desc          1.2.0   2018-05-01 [1] CRAN (R 3.6.1)
-##  devtools      2.1.0   2019-07-06 [1] CRAN (R 3.6.1)
-##  digest        0.6.20  2019-07-04 [1] CRAN (R 3.6.1)
+##  devtools      2.2.0   2019-09-07 [1] CRAN (R 3.6.1)
+##  digest        0.6.23  2019-11-23 [1] CRAN (R 3.6.1)
+##  DT            0.8     2019-08-07 [1] CRAN (R 3.6.1)
+##  ellipsis      0.3.0   2019-09-20 [1] CRAN (R 3.6.1)
 ##  evaluate      0.14    2019-05-28 [1] CRAN (R 3.6.1)
 ##  fs            1.3.1   2019-05-06 [1] CRAN (R 3.6.1)
 ##  glue          1.3.1   2019-03-12 [1] CRAN (R 3.6.1)
-##  htmltools     0.3.6   2017-04-28 [1] CRAN (R 3.6.1)
-##  knitr         1.24    2019-08-08 [1] CRAN (R 3.6.1)
+##  htmltools     0.4.0   2019-10-04 [1] CRAN (R 3.6.1)
+##  htmlwidgets   1.3     2018-09-30 [1] CRAN (R 3.6.1)
+##  knitr         1.26    2019-11-12 [1] CRAN (R 3.6.1)
 ##  magrittr      1.5     2014-11-22 [1] CRAN (R 3.6.1)
 ##  memoise       1.1.0   2017-04-21 [1] CRAN (R 3.6.1)
 ##  pkgbuild      1.0.4   2019-08-05 [1] CRAN (R 3.6.1)
@@ -375,10 +412,10 @@ devtools::session_info()
 ##  processx      3.4.1   2019-07-18 [1] CRAN (R 3.6.1)
 ##  ps            1.3.0   2018-12-21 [1] CRAN (R 3.6.1)
 ##  R6            2.4.0   2019-02-14 [1] CRAN (R 3.6.1)
-##  Rcpp          1.0.2   2019-07-25 [1] CRAN (R 3.6.1)
+##  Rcpp          1.0.3   2019-11-08 [1] CRAN (R 3.6.1)
 ##  remotes       2.1.0   2019-06-24 [1] CRAN (R 3.6.1)
-##  rlang         0.4.0   2019-06-25 [1] CRAN (R 3.6.1)
-##  rmarkdown     1.14    2019-07-12 [1] CRAN (R 3.6.1)
+##  rlang         0.4.2   2019-11-23 [1] CRAN (R 3.6.1)
+##  rmarkdown     2.0     2019-12-12 [1] CRAN (R 3.6.1)
 ##  rprojroot     1.3-2   2018-01-03 [1] CRAN (R 3.6.1)
 ##  sessioninfo   1.1.1   2018-11-05 [1] CRAN (R 3.6.1)
 ##  stringi       1.4.3   2019-03-12 [1] CRAN (R 3.6.0)
@@ -387,7 +424,7 @@ devtools::session_info()
 ##  usethis       1.5.1   2019-07-04 [1] CRAN (R 3.6.1)
 ##  withr         2.1.2   2018-03-15 [1] CRAN (R 3.6.1)
 ##  xaringan      0.11    2019-07-12 [1] CRAN (R 3.6.1)
-##  xfun          0.8     2019-06-25 [1] CRAN (R 3.6.1)
+##  xfun          0.11    2019-11-12 [1] CRAN (R 3.6.1)
 ##  yaml          2.2.0   2018-07-25 [1] CRAN (R 3.6.0)
 ## 
 ## [1] C:/Users/Roxana/Documents/R/win-library/3.6

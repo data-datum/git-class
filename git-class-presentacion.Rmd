@@ -1,6 +1,6 @@
 ---
 title: "Tutorial de Git/GitHub"
-subtitle: "⚔<br/n"
+subtitle: ""
 author: "Roxana Noelia Villafañe"
 institute: ""
 date: "`r Sys.Date()`"
@@ -45,6 +45,7 @@ de los cambios a lo largo del tiempo.
 
 - GitHub es un sitio web donde puedes subir una copia de tu repositorio de GitHub. Te permite colaborar más facilmente con otras personas en el proyecto. Lo hace proveyendo una ubicación centralizada para compartir el repositorio, una interfaz basada en la web, y caraceterísticas especiales como _fork, pull requests, issues, y wikis_.
 
+--
 ### Ventajas de GitHub
 - Colaborar en diferentes ramas de trabajo. 
 - Re-ver el trabajo en progreso. 
@@ -57,7 +58,7 @@ de los cambios a lo largo del tiempo.
 - __Commit__: cada vez que se guarda un cambio en cualquier archivo, se crea un commit. Cada vez
 que se realiza un commit se agrega un mensaje describiendo el cambio realizado. 
 - __Branch(rama)__: una serie de commits que se crean para agregar una nueva funcionalidad. 
-- Master branch (rama master): cuando creamos un repositorio, es la rama creada por defecto. Es la rama en donde terminarán todos los cambios realizados cuando pasen a producción (etapa final).
+- __Master branch (rama master)__: cuando creamos un repositorio, es la rama creada por defecto. Es la rama en donde terminarán todos los cambios realizados cuando pasen a producción (etapa final).
 - __Topic master(rama propia)__: cuando estamos creando nuevas funcionalidades en una rama, las hacemos en una rama que hemos creado. Luego esos cambios serán o no aceptados para ser parte de la rama master. 
 - __Merge__: es una manera de tomar los cambios realizados de una rama e incorporarlos a otra. 
 - __Pull request__: se realiza para que alguien más vea los cambios realizados en una rama propia e incluirla en la rama master. 
@@ -203,7 +204,11 @@ _Pushing_ es como se transfieren commits desde el repositorio local a un reposit
 ---
 <img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
 
-# Git Push / Git Pull
+# Como trabajar con repositorios remotos
+
+
+
+
 
 
 ---
@@ -295,6 +300,35 @@ Nos abre un archivo html en el navegador de la ayuda de Git.
 ---
 <img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
 
+# Qué nos permite hacer git
+
+### - Saber la historia de un proyecto
+
+### - Volver en el tiempo para ver cambios
+
+### - Experimentar con los cambios
+
+### - Hacer un backup de nuestro trabajo
+
+### - Colaborar con otros proyectos
+
+---
+<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+
+# Conceptos de Git que hemos visto
+
+### **Repositorio**: la carpeta de tu proyecto.
+### **Commit**: una captura del repositorio
+### **Hash**: un id para un commit
+### **Branch(rama)**
+### **Merge(unión)**: nos permite unir un cambio a la rama master
+### **Remote(remoto)**: una computadora con un repositorio
+### **Clone(clonar)**: obtener un repositorio remoto por primera vez. 
+### **Push**: mandar cambios (commits) a un repositorio remoto desde local.
+- **Pull**: bajar los cambios (commits) de un repositorio remoto a local. 
+---
+<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+
 # Bibliografía 
 
 ### git la guía sencilla [español]
@@ -306,7 +340,8 @@ https://www.keycdn.com/blog/git-cheat-sheet
 ### Comandos básicos [inglés]
 https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
 
-
+### Mas links (README de este repo)
+https://github.com/data-datum/git-class 
 
 ---
 
