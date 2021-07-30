@@ -15,10 +15,10 @@ output:
 class: center, middle
 # ¿Qué es Git?
 
-<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="30%" align="center" />
+<img src="images/git-logo.png" width="30%" align="center" />
 
 ---
-<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+<img src="images/git-logo.png" width="10%" align="right" />
 
 # Git
 
@@ -39,7 +39,7 @@ de los cambios a lo largo del tiempo.
 
 
 ---
-<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+<img src="images/git-logo.png" width="10%" align="right" />
 
 # GitHub
 
@@ -52,7 +52,7 @@ de los cambios a lo largo del tiempo.
 - Ver el progreso del equipo. 
 
 ---
-<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+<img src="images/git-logo.png" width="10%" align="right" />
 
 # Conceptos Clave
 - __Commit__: cada vez que se guarda un cambio en cualquier archivo, se crea un commit. Cada vez
@@ -66,7 +66,7 @@ que se realiza un commit se agrega un mensaje describiendo el cambio realizado.
 - __Fork__: cuando se crea una copia de un repositorio ajeno en nuestro perfil de GitHub. 
 
 ---
-<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+<img src="images/git-logo.png" width="10%" align="right" />
 
 # Vamos a instalar Git 
 
@@ -75,7 +75,7 @@ https://rogerdudler.github.io/git-guide/index.es.html
 
 ---
 
-<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+<img src="images/git-logo.png" width="10%" align="right" />
 
 # Configurar Git
 
@@ -88,7 +88,7 @@ https://rogerdudler.github.io/git-guide/index.es.html
 
 
 ---
-<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+<img src="images/git-logo.png" width="10%" align="right" />
 
 # Cómo proceder con Git
 ### Si tenemos un repositorio en Github
@@ -100,7 +100,7 @@ git clone [url] #<<
 
 
 ---
-<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+<img src="images/git-logo.png" width="10%" align="right" />
 
 # Cómo proceder con Git
 ### Si nuestro repositorio está en una carpeta local y queremos subirlo a Github
@@ -111,7 +111,7 @@ git clone [url] #<<
 ```
 
 ---
-<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+<img src="images/git-logo.png" width="10%" align="right" />
 
 # Cómo crear una rama 
 
@@ -141,22 +141,22 @@ git push origin <branch> #<<
 
 
 ---
-<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+<img src="images/git-logo.png" width="10%" align="right" />
 
 # Como realizar cambios en Git/Github
 - Los cambios se hacen por etapas
 
-<img src="file:///C:/Users/Roxana/git-class/images/git-01.jpg" width="100%" align="center" />
+<img src="images/git-01.jpg" width="100%" align="center" />
 
 ---
 
-<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+<img src="images/git-logo.png" width="10%" align="right" />
 
 # Como realizar cambios en Git/Github
 
-<img src="file:///C:/Users/Roxana/git-class/images/git-workflow.png" width="80%" align="center" />
+<img src="images/git-workflow.png" width="80%" align="center" />
 ---
-<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+<img src="images/git-logo.png" width="10%" align="right" />
 
 # Como guardar cambios (1)
 
@@ -176,7 +176,7 @@ Se agrega el archivo con la extensión.
 
 ---
 
-<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+<img src="images/git-logo.png" width="10%" align="right" />
 
 # Como guardar cambios (2)
 
@@ -190,7 +190,7 @@ Se agrega un mensaje entre comillas describiendo los cambios realizados
 
 ---
 
-<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+<img src="images/git-logo.png" width="10%" align="right" />
 
 # Como guardar cambios (3)
 ### Los cambios ahora se guardan en un repositorio remoto
@@ -202,7 +202,7 @@ Con este comando se suben los cambios realizados en un repositorio local a un re
 _Pushing_ es como se transfieren commits desde el repositorio local a un repositorio remoto. 
 
 ---
-<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+<img src="images/git-logo.png" width="10%" align="right" />
 
 # Como trabajar con repositorios remotos
 
@@ -213,7 +213,7 @@ _Pushing_ es como se transfieren commits desde el repositorio local a un reposit
 
 ---
 
-<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+<img src="images/git-logo.png" width="10%" align="right" />
 
 # Git Diff
 - Nos ayuda a ver las diferencias en los archivos que todavía no han sido agregados a la etapa "stage". 
@@ -226,7 +226,7 @@ git diff #<<
 
 ---
 
-<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+<img src="images/git-logo.png" width="10%" align="right" />
 
 # Fork
 Fork es para copiar un repositorio remoto ajeno a nuestra lista de repositorios remotos. 
@@ -234,7 +234,7 @@ Se realiza desde Github siempre, ya que se están trabajando con repositorios re
 
 ---
 
-<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+<img src="images/git-logo.png" width="10%" align="right" />
 
 # Borrar un archivo
 
@@ -244,7 +244,7 @@ git rm archivo.ext #<<
 
 ---
 
-<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+<img src="images/git-logo.png" width="10%" align="right" />
 
 # Para ver los commits realizados 
 
@@ -253,7 +253,7 @@ git log #<<
 ```
 
 ---
-<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+<img src="images/git-logo.png" width="10%" align="right" />
 
 # Git Tips
 
@@ -275,7 +275,7 @@ Hay muchas formas de crear un apropiado flujo de trabajo. Debemos asegurarnos qu
 
 
 ---
-<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+<img src="images/git-logo.png" width="10%" align="right" />
 
 # Ayuda
 ```{r message=FALSE, warning=FALSE, eval=FALSE}
@@ -283,11 +283,11 @@ git help #<<
 ```
 
 
-<img src="file:///C:/Users/Roxana/git-class/images/git-help.png" width="65%" align="center" />
+<img src="images/git-help.png" width="65%" align="center" />
 
 ---
 
-<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+<img src="images/git-logo.png" width="10%" align="right" />
 
 # Ayuda de un comando específico
 
@@ -298,7 +298,7 @@ git help clone #<<
 Nos abre un archivo html en el navegador de la ayuda de Git. 
 
 ---
-<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+<img src="images/git-logo.png" width="10%" align="right" />
 
 # Qué nos permite hacer git
 
@@ -313,7 +313,7 @@ Nos abre un archivo html en el navegador de la ayuda de Git.
 ### - Colaborar con otros proyectos
 
 ---
-<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+<img src="images/git-logo.png" width="10%" align="right" />
 
 # Conceptos de Git que hemos visto
 
@@ -327,7 +327,7 @@ Nos abre un archivo html en el navegador de la ayuda de Git.
 ### **Push**: mandar cambios (commits) a un repositorio remoto desde local.
 - **Pull**: bajar los cambios (commits) de un repositorio remoto a local. 
 ---
-<img src="file:///C:/Users/Roxana/git-class/images/git-logo.png" width="10%" align="right" />
+<img src="images/git-logo.png" width="10%" align="right" />
 
 # Bibliografía 
 
