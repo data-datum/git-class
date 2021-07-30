@@ -1,6 +1,6 @@
 # git-class
-## Git Installation
-http://bit.ly/2PwRhZi
+
+* Link de la Presentación: https://data-datum.github.io/git-class/git-class-presentacion.html#1
 
 ## Resources for learning Git
 
@@ -9,3 +9,7 @@ http://bit.ly/2PwRhZi
 * The most useful git commands http://bit.ly/2Pu1OnZ
 * Top 20 Git Commands With Examples http://bit.ly/2PuF1bA
 * 25 Git commands that every developer should know http://bit.ly/2PB2bwY
+
+
+### Git Installation
+http://bit.ly/2PwRhZi
