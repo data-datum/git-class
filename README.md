@@ -1,6 +1,6 @@
 # git-class
 
-* Link de la Presentación: https://data-datum.github.io/git-class/git-class-presentacion.html#1
+* Link de la Presentación: https://data-datum.github.io/git-class/git.html#1
 
 ## Resources for learning Git
 
