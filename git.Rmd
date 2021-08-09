@@ -31,9 +31,9 @@ class: inverse, center, middle
 # Git
 
 - Git es un sistema de control de versiones creado por *Linus Torvalds*.
-- Un sistema de control de versiones es una porción de software diseñada para tener seguimiento
+- Un **sistema de control de versiones** es una porción de software diseñada para tener seguimiento
 de los cambios a lo largo del tiempo. 
-- Git es un sistema de control de versiones *distribuido*, que significa que cada uno que trabaja con Git tiene una copia de la historia completa del proyecto. 
+- Git, a su vez, es *distribuido*, que significa que cada uno que trabaja con Git tiene una copia de la historia completa del proyecto. 
 
 ### Ventajas de usar Git
 - La habilidad para deshacer cambios.
@@ -64,11 +64,14 @@ de los cambios a lo largo del tiempo.
 <img src="img/git-logo.png" width="10%" align="right" />
 
 # Conceptos Clave
-- __Commit__: cada vez que se guarda un cambio en cualquier archivo, se crea un commit. Cada vez
-que se realiza un commit se agrega un mensaje describiendo el cambio realizado. 
+- __Commit__: cada vez que se guarda un cambio en cualquier archivo, se crea un commit. Cada vezque se realiza un commit se agrega un mensaje describiendo el cambio realizado. 
+<br><br><br>
 - __Clone (clonar)__: cuando copiamos un repositorio de internet en nuestra computadora para realizar cambios allí. 
+<br><br><br>
 - __Push__: subir cambios locales a un repositorio remoto.
+<br><br><br>
 - __Pull__: bajar cambios de un repositorio remoto a un repositorio local.
+<br><br><br>
 - __Fork__: cuando se crea una copia de un repositorio ajeno en nuestro perfil de GitHub. 
 
 
@@ -78,10 +81,17 @@ que se realiza un commit se agrega un mensaje describiendo el cambio realizado.
 
 # Conceptos Clave (II)
 - __Branch(rama)__: una serie de commits que se crean para agregar una nueva funcionalidad. 
+<br>
+
 - __Master branch (rama master)__: cuando creamos un repositorio, es la rama creada por defecto. Es la rama en donde terminarán todos los cambios realizados cuando pasen a producción (etapa final).
+<br>
 - __Topic master(rama propia)__: cuando estamos creando nuevas funcionalidades en una rama, las hacemos en una rama que hemos creado. Luego esos cambios serán o no aceptados para ser parte de la rama master. 
+<br>
+
 - __Pull request__: se realiza para que alguien más vea los cambios realizados en una rama propia e incluirla en la rama master. 
 Si el dueño del repositorio original, acepta los cambios de un pull request, se agregan los cambios, se realiza un __merge__.
+<br>
+
 - __Merge__: es una manera de tomar los cambios realizados de una rama e incorporarlos a otra. 
 
 
@@ -498,13 +508,21 @@ Hay muchas formas de crear un apropiado flujo de trabajo. Debemos asegurarnos qu
 ## Conceptos de Git que hemos visto
 
 * **Repositorio**: la carpeta de tu proyecto.
+<br><br>
 * **Commit**: una captura del repositorio
+<br><br>
 * **Clone(clonar)**: obtener un repositorio remoto por primera vez. 
+<br><br>
 * **Push**: mandar cambios (commits) a un repositorio remoto desde local.
+<br><br>
 * **Pull**: bajar los cambios (commits) de un repositorio remoto a local. 
+<br><br>
 * **Hash**: un id para un commit
+<br><br>
 * **Branch(rama)**: permite trabajar de manera aislada cuando se trabaja en un grupo de trabajo grande. 
+<br><br>
 * **Merge(unión)**: nos permite unir un cambio a la rama master
+<br><br>
 * **Remote(remoto)**: una computadora con un repositorio
 
 ---
