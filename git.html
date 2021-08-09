@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>git.utf8</title>
+    <meta charset="utf-8" />
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/hygge.css" rel="stylesheet" />
+    <link rel="stylesheet" href="animate.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+class: inverse, center, middle
+
+
+## Git/GitHub
+
+### Control de Versiones
+
+
+---
+class: inverse, center, middle
+# ¿Qué es Git?
+
+&lt;img src="img/git-logo.png" width="30%" align="center" /&gt;
+
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+# Git
+
+- Git es un sistema de control de versiones creado por *Linus Torvalds*.
+- Un sistema de control de versiones es una porción de software diseñada para tener seguimiento
+de los cambios a lo largo del tiempo. 
+- Git es un sistema de control de versiones *distribuido*, que significa que cada uno que trabaja con Git tiene una copia de la historia completa del proyecto. 
+
+### Ventajas de usar Git
+- La habilidad para deshacer cambios.
+- Una historia completa de todos los cambios.
+- Documentación de por que los cambios fueron hechos. 
+- La tranquilidad de cambiar cualquier cosa. 
+- Muchas lineas históricas. 
+#### Si trabajamos en equipo
+- La habilidad para resolver conflictos. 
+- Creación de ramas para trabajar de manera independiente. 
+
+
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+# GitHub
+
+- GitHub es un sitio web donde puedes subir una copia de tu repositorio de GitHub. Te permite colaborar más facilmente con otras personas en el proyecto. Lo hace proveyendo una ubicación centralizada para compartir el repositorio, una interfaz basada en la web, y caraceterísticas especiales como _fork, pull requests, issues, y wikis_.
+
+--
+### Ventajas de GitHub
+- Colaborar en diferentes ramas de trabajo. 
+- Re-ver el trabajo en progreso. 
+- Ver el progreso del equipo. 
+
+---
+
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+# Conceptos Clave
+- __Commit__: cada vez que se guarda un cambio en cualquier archivo, se crea un commit. Cada vez
+que se realiza un commit se agrega un mensaje describiendo el cambio realizado. 
+- __Clone (clonar)__: cuando copiamos un repositorio de internet en nuestra computadora para realizar cambios allí. 
+- __Push__: subir cambios locales a un repositorio remoto.
+- __Pull__: bajar cambios de un repositorio remoto a un repositorio local.
+- __Fork__: cuando se crea una copia de un repositorio ajeno en nuestro perfil de GitHub. 
+
+
+---
+
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+# Conceptos Clave (II)
+- __Branch(rama)__: una serie de commits que se crean para agregar una nueva funcionalidad. 
+- __Master branch (rama master)__: cuando creamos un repositorio, es la rama creada por defecto. Es la rama en donde terminarán todos los cambios realizados cuando pasen a producción (etapa final).
+- __Topic master(rama propia)__: cuando estamos creando nuevas funcionalidades en una rama, las hacemos en una rama que hemos creado. Luego esos cambios serán o no aceptados para ser parte de la rama master. 
+- __Pull request__: se realiza para que alguien más vea los cambios realizados en una rama propia e incluirla en la rama master. 
+Si el dueño del repositorio original, acepta los cambios de un pull request, se agregan los cambios, se realiza un __merge__.
+- __Merge__: es una manera de tomar los cambios realizados de una rama e incorporarlos a otra. 
+
+
+
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+# Vamos a instalar Git 
+
+https://rogerdudler.github.io/git-guide/index.es.html
+
+
+---
+
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+# Configurar Git
+
+- Configurar Git en nuestra computadora (entorno local)
+
+
+```r
+*1. git config --global user.name "Roxana"
+*2. git config --global user.email noelia0618@gmail.com
+```
+
+
+
+---
+class: inverse, middle
+
+# ¿Qué es un commit?
+
+
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+# Es probable que una persona que no trabaja con Git guarde de esta forma los cambios realizados en un archivo
+
+&lt;img src="img/guardado-commit.png" width="80%" align="middle" /&gt;
+
+
+
+
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+
+
+
+&lt;img src="img/commit1.png" width="100%" align="center" /&gt;
+
+
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+&lt;img src="img/commit2.png" width="100%" align="center" /&gt;
+
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+&lt;img src="img/commit3.png" width="100%" align="center" /&gt;
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+&lt;img src="img/commit4.png" width="100%" align="center" /&gt;
+
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+&lt;img src="img/commit5.png" width="100%" align="center" /&gt;
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+# Git Commit
+
+* Un commit guarda un cambio.
+
+```r
+*git commit -m "nuevo cambio"
+```
+Se agrega un mensaje entre comillas describiendo los cambios realizados
+
+### Ya en este punto terminan los cambios locales
+
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+# Hash
+
+* Es un id para el commit realizado
+
+---
+class: inverse, middle
+
+# Git Clone/Git Push/Git Pull
+
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+# Como trabajar con repositorios remotos
+
+
+&lt;img src="img/remote.png" width="70%" align="center" /&gt;
+
+
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+## Martin desea tener una copia del repositorio remoto, va a realizar un __git clone__
+
+&lt;img src="img/clone.png" width="90%" align="center" /&gt;
+
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+## Lucy también desea una copia del repositorio remoto, va a realizar un __git clone__
+
+&lt;img src="img/clone2.png" width="90%" align="center" /&gt;
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+# Git Clone
+
+- Clonar es copiar un repositorio remoto a nuestro repositorio local, es decir, guardar una copia en nuestra computadora. 
+
+
+```r
+*git clone [url]
+```
+
+
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+## Lucy realiza un cambio en su repositorio local, se encuentra con una actualización por sobre el repositorio remoto
+
+&lt;img src="img/cambio1.png" width="70%" align="center" /&gt;
+
+---
+
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+## Para que esos cambios que Lucy realizó se guarden en el repositorio remoto, Lucy necesita hacer un __git push__
+
+&lt;img src="img/push.png" width="70%" align="center" /&gt;
+
+
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+
+&lt;img src="img/push4.png" width="90%" align="center" /&gt;
+
+
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+# Git Push
+## Vamos a guardar los cambios locales en un repositorio remoto.
+
+
+```r
+*git push
+```
+Con este comando se suben los cambios realizados en un repositorio local a un repositorio remoto. 
+&lt;br&gt;&lt;br&gt;
+_Pushing_ es como se transfieren commits desde el repositorio local a un repositorio remoto. 
+
+---
+
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+## Ahora Martin se encuentra con una actualización menos que el repositorio remoto, para bajar esos cambios a su repositorio local, va a hacer un __git pull__
+
+&lt;img src="img/pull.png" width="70%" align="center" /&gt;
+
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+
+&lt;img src="img/pull4.png" width="90%" align="center" /&gt;
+
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+# Git Pull 
+
+## Vamos a bajar a nuestro repositorio los cambios de un repositorio remoto.
+
+
+```r
+*git pull
+```
+
+---
+class: inverse, middle
+
+# Flujo de Trabajo
+
+
+---
+
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+### Pasos
+
+* En primer lugar se realizan los cambios en un archivo. 
+* En la consola de git vamos a la carpeta de trabajo/rama de trabajo
+
+```r
+cd carpeta_trabajo
+*git status
+```
+_git status_ nos permite conocer los cambios realizados.
+
+* Esos cambios se registran mediante el comando
+
+```r
+*git add file.ext
+```
+Se agrega el archivo con la extensión.
+
+
+```r
+*git commit -m "nuevo logo"
+```
+_git commit -m "nuevo logo"_ nos permite agregar los cambios realizados
+
+
+```r
+*git push
+```
+_git push_ subo los cambios realizados a Github
+
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+# Resumiendo
+
+&lt;img src="img/git-01.jpg" width="100%" align="center" /&gt;
+
+---
+
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+# Resumiendo
+
+&lt;img src="img/git-workflow.png" width="80%" align="center" /&gt;
+
+---
+
+class: inverse, middle
+
+
+# Otros comandos útiles de Git
+
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+# Fork
+
+__No es un comando per se de Git, ya que es propio del trabajo en Github__ 
+
+Fork es para copiar un repositorio remoto ajeno a nuestra lista de repositorios remotos. 
+Se realiza desde Github siempre, ya que se están trabajando con repositorios remotos. 
+
+&lt;img src="img/git-02.png" width="70%" align="center" /&gt;
+
+
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+# Borrar un archivo
+
+
+```r
+*git rm archivo.ext
+```
+
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+# Para ver los commits realizados 
+
+
+```r
+*git log
+```
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+# Ayuda
+
+```r
+*git help
+```
+
+
+&lt;img src="img/git-help.png" width="65%" align="center" /&gt;
+
+---
+
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+# Ayuda de un comando específico
+
+
+```r
+*git help clone
+```
+
+Nos abre un archivo html en el navegador de la ayuda de Git. 
+
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+# Git Diff
+- Nos ayuda a ver las diferencias en los archivos que todavía no han sido agregados a la etapa "stage". 
+
+
+```r
+*git diff
+```
+
+
+
+---
+class: inverse, middle
+
+# Git Branch
+
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+## Cuando se trabaja en proyectos grandes, generalmente se trabaja en __ramas__, la rama principal es la __rama master__
+
+&lt;img src="img/master.png" width="100%" align="center" /&gt;
+
+---
+
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+## A medida que el proyecto va avanzando, cuando las mejoras son importantes actualizaciones, se agregan a la __rama master__
+
+&lt;img src="img/master-add.png" width="100%" align="center" /&gt;
+
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+## Trabajar con ramas, nos permite como miembros del proyecto, no sólo tener nuestra propia rama, sino también, experimentar cambios sin que el proyecto original (alojado en la rama master), sufra cambios
+
+&lt;img src="img/master-other-branch.png" width="100%" align="center" /&gt;
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+## Cuando unos de los desarrolladores del proyecto, agrega actualizaciones que son significativas al proyecto, eso cambios pasan a la rama master, mediante un __merge__. 
+
+&lt;img src="img/git-merge.png" width="100%" align="center" /&gt;
+
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+# Cómo crear una rama 
+
+
+```r
+*git branch new_name
+```
+
+- Con este comando listamos las ramas creadas en ese repositorio
+
+```r
+*git branch
+```
+
+- Borrar la rama creada
+
+```r
+*git branch -d new_name
+```
+
+- Crear una rama e ir a esa rama inmediatamente
+
+```r
+*git checkout -b new_name
+```
+
+- Una rama no está disponible _para los demás_ a menos que la subas al repositorio remoto. 
+
+```r
+*git push origin &lt;branch&gt;
+```
+
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+# Buenas prácticas en el uso de Git
+
+__1. Hacer commits a menudo__
+Esto permite ahorrar conflictos con las demás personas que trabajan en el proyecto. 
+
+__2. Testear, luego hacer el commit__
+Nunca hacer commit de trabajo incompleto. Siempre testear los cambios antes de compartirlos con los demás. 
+
+__3. Poner mensajes en el commit__
+Escribir mensajes permite que los demás sepan los cambios q se han realizado. Se recomienda ser lo más descriptivo posible.
+
+__4. Crear ramas__
+Crear ramas permite crear líneas de desarrollo, para probar cambios y experimentar ahí. 
+
+__5. Adoptar un flujo de trabajo común en Git__
+Hay muchas formas de crear un apropiado flujo de trabajo. Debemos asegurarnos que todos los miembros del equipo sigan el mismo flujo de trabajo desde el principio. 
+
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+# Qué nos permite hacer git
+
+## - Saber la historia de un proyecto
+
+## - Volver en el tiempo para ver cambios
+
+## - Experimentar con los cambios
+
+## - Hacer un backup de nuestro trabajo
+
+## - Colaborar con otros proyectos
+
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+## Conceptos de Git que hemos visto
+
+* **Repositorio**: la carpeta de tu proyecto.
+* **Commit**: una captura del repositorio
+* **Clone(clonar)**: obtener un repositorio remoto por primera vez. 
+* **Push**: mandar cambios (commits) a un repositorio remoto desde local.
+* **Pull**: bajar los cambios (commits) de un repositorio remoto a local. 
+* **Hash**: un id para un commit
+* **Branch(rama)**: permite trabajar de manera aislada cuando se trabaja en un grupo de trabajo grande. 
+* **Merge(unión)**: nos permite unir un cambio a la rama master
+* **Remote(remoto)**: una computadora con un repositorio
+
+---
+&lt;img src="img/git-logo.png" width="10%" align="right" /&gt;
+
+# Bibliografía 
+
+### git la guía sencilla [español]
+https://rogerdudler.github.io/git-guide/index.es.html
+
+### git comandos más útiles [inglés]
+https://www.keycdn.com/blog/git-cheat-sheet
+
+### Comandos básicos [inglés]
+https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
+
+### Git for Humans
+http://bit.ly/2PwPjbr
+
+### Happy Git &amp; Github for the useR
+https://happygitwithr.com/
+
+---
+background-image: url(C:/Users/Roxana/curso-r-analisis-datos/img/textura-fondo.png)
+background-size: cover
+class: center, middle, inverse
+
+ 
+
+# 🙋 ¿Preguntas?
+
+
+---
+background-image: url(C:/Users/Roxana/curso-r-analisis-datos/img/git-final.jpg)
+background-size: cover
+class: inverse, center, middle
+
+# Muchas Gracias
+
+
+---
+
+
+```r
+devtools::session_info()
+```
+
+```
+## ─ Session info ───────────────────────────────────────────────────────────────
+##  setting  value                       
+##  version  R version 3.6.3 (2020-02-29)
+##  os       Ubuntu 20.04.2 LTS          
+##  system   x86_64, linux-gnu           
+##  ui       X11                         
+##  language es_AR:es                    
+##  collate  es_AR.UTF-8                 
+##  ctype    es_AR.UTF-8                 
+##  tz       America/Argentina/Cordoba   
+##  date     2021-08-09                  
+## 
+## ─ Packages ───────────────────────────────────────────────────────────────────
+##  package     * version    date       lib source                              
+##  assertthat    0.2.1      2019-03-21 [1] CRAN (R 3.6.3)                      
+##  backports     1.1.10     2020-09-15 [1] CRAN (R 3.6.3)                      
+##  callr         3.5.0      2020-10-08 [1] CRAN (R 3.6.3)                      
+##  cli           2.0.2      2020-02-28 [1] CRAN (R 3.6.3)                      
+##  crayon        1.3.4      2017-09-16 [1] CRAN (R 3.6.3)                      
+##  desc          1.2.0      2018-05-01 [1] CRAN (R 3.6.3)                      
+##  devtools      2.3.0      2020-04-10 [1] CRAN (R 3.6.3)                      
+##  digest        0.6.26     2020-10-17 [1] CRAN (R 3.6.3)                      
+##  ellipsis      0.3.1      2020-05-15 [1] CRAN (R 3.6.3)                      
+##  emo         * 0.0.0.9000 2020-05-12 [1] Github (hadley/emo@3f03b11)         
+##  evaluate      0.14       2019-05-28 [1] CRAN (R 3.6.3)                      
+##  fansi         0.4.1      2020-01-08 [1] CRAN (R 3.6.3)                      
+##  fontawesome * 0.1.0      2020-05-12 [1] Github (rstudio/fontawesome@2b64e31)
+##  fs            1.4.2      2020-06-30 [1] CRAN (R 3.6.3)                      
+##  generics      0.0.2      2018-11-29 [1] CRAN (R 3.6.3)                      
+##  glue          1.4.2      2020-08-27 [1] CRAN (R 3.6.3)                      
+##  htmltools     0.5.0      2020-06-16 [1] CRAN (R 3.6.3)                      
+##  knitr         1.30       2020-09-22 [1] CRAN (R 3.6.3)                      
+##  lubridate     1.7.9      2020-06-08 [1] CRAN (R 3.6.3)                      
+##  magrittr      1.5        2014-11-22 [1] CRAN (R 3.6.3)                      
+##  memoise       1.1.0      2017-04-21 [3] CRAN (R 3.5.0)                      
+##  pkgbuild      1.1.0      2020-07-13 [1] CRAN (R 3.6.3)                      
+##  pkgload       1.1.0      2020-05-29 [1] CRAN (R 3.6.3)                      
+##  prettyunits   1.1.1      2020-01-24 [1] CRAN (R 3.6.3)                      
+##  processx      3.4.4      2020-09-03 [1] CRAN (R 3.6.3)                      
+##  ps            1.4.0      2020-10-07 [1] CRAN (R 3.6.3)                      
+##  purrr         0.3.4      2020-04-17 [1] CRAN (R 3.6.3)                      
+##  R6            2.4.1      2019-11-12 [1] CRAN (R 3.6.3)                      
+##  Rcpp          1.0.5      2020-07-06 [1] CRAN (R 3.6.3)                      
+##  remotes       2.1.1      2020-02-15 [1] CRAN (R 3.6.3)                      
+##  rlang         0.4.8      2020-10-08 [1] CRAN (R 3.6.3)                      
+##  rmarkdown     2.3        2020-06-18 [1] CRAN (R 3.6.3)                      
+##  rprojroot     1.3-2      2018-01-03 [1] CRAN (R 3.6.3)                      
+##  sessioninfo   1.1.1      2018-11-05 [3] CRAN (R 3.5.1)                      
+##  stringi       1.5.3      2020-09-09 [1] CRAN (R 3.6.3)                      
+##  stringr       1.4.0      2019-02-10 [1] CRAN (R 3.6.3)                      
+##  testthat      2.3.2      2020-03-02 [1] CRAN (R 3.6.3)                      
+##  usethis       1.6.1      2020-04-29 [1] CRAN (R 3.6.3)                      
+##  withr         2.3.0      2020-09-22 [1] CRAN (R 3.6.3)                      
+##  xaringan      0.16       2020-03-31 [1] CRAN (R 3.6.3)                      
+##  xfun          0.18       2020-09-29 [1] CRAN (R 3.6.3)                      
+##  yaml          2.2.1      2020-02-01 [1] CRAN (R 3.6.3)                      
+## 
+## [1] /home/roxana/R/x86_64-pc-linux-gnu-library/3.6
+## [2] /usr/local/lib/R/site-library
+## [3] /usr/lib/R/site-library
+## [4] /usr/lib/R/library
+```
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
